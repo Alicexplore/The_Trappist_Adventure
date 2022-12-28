@@ -68,5 +68,11 @@ body {
     /* color: #737373; */
     color: #b0b0b0;
 }
+
+.enter {
+    cursor: cell;
+    text-decoration: none;
+    color: white;
+}
     
   
