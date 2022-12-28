@@ -4,25 +4,27 @@ body {
 }
 
 .title {
-    font-family: 'anurati';
-    color: white;
-    margin-top: 1.8em;
-    margin-left: 0.9em;
+    position: absolute;
     text-align: center;
-    font-size: 7vw;
-    letter-spacing: 0.9em;
-    position: relative;
+    letter-spacing: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-family: "anurati";
+    font-size: 2vw;
+    color: #b9b9b9;
 }
 
-.background {
-    height: 7713px;   
+.background { 
     width: auto;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(33, 33, 33);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
     background-size:100%;
  } 
+
+.planet {
+    width: 45%;
+}
 
  .logoplanet {
     width: 5%;
@@ -111,6 +113,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vw;
+    scroll-snap-stop: normal;
 }
 
 /* .introFormulaire{
