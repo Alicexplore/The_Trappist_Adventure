@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    cursor: url(img/rocket-08.png), auto;
+    cursor: url(img/rocket-resize-08.png), auto;
 }
 
 .background {
@@ -71,7 +71,7 @@ body {
 }
 
 .enter {
-    cursor: url(img/rocket-07.png), auto;
+    cursor: url(img/rocket-resize-07.png), auto;
     text-decoration: none;
     color: white;
 }
