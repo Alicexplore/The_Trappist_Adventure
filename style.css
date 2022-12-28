@@ -1,1 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'anurati';
+    color: white;
+    margin-top: 1.8em;
+    margin-left: 0.9em;
+    text-align: center;
+    font-size: 7vw;
+    letter-spacing: 0.9em;
+    position: relative;
+}
+
+.background {
+    height: 7713px;   
+    width: auto;
+    background-image: url(img/backgroundlast-09.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(3, 22, 40);
+    background-size:100%;
+ } 
+
+ .logoplanet {
+    width: 5%;
+    position: relative;
+    margin-left: 3em;
+    margin-top: 3em;
+}
+
+.rocketLine {
+    text-align: center;
+    margin-top: -6vw;
+    position: relative;
+}
+
+.titlesite {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    margin-top: 24vw;
+    font-size: 8em;
+    position: relative;
+}
+
+.explicativtext {
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 1.1vw;
+    /* margin-left: 10em; */
+    /* margin-right: 10em; */
+    line-height: 1.4em;
+    margin-top: 150px;
+    margin-left: 14em;
+    margin-right: 14em;
+    line-height: 1.3em;
+    margin-top: 7vw;
+    position: relative;   
+}
+
+.blink_me {
+    animation: blinker 4s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0.2;
+    }
+  }
+
+.agencytext {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 4vw;
+    margin-top: 7vw;
+    position: relative;
+}
+
+.logoplanetwebpage {
+    text-align: center;
+    padding: 4vw;
+    position: relative;
+}
+
+.rocketunderwhere {
+    text-align: center;
+    display: block;
+    /* margin-top: -6vw; */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2vw;
+}
+
+.howtochoose {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 1.3vw;
+    position: relative;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.3vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+}
+
+/* .introFormulaire{
+    font-family: 'montserrat';
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2vw;
+} */
+
+.bouton{
+    background-color: rgb(228, 1, 39);
+    color: white;
+    padding: 1vw;
+    font-size: 2.2vw;
+    border: none;
+    cursor: pointer;
+    font-family: 'montserrat';
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width : 15vw;
+    margin-top: 2vw;
+    display: block;  
+    border-radius : 16px;
+    border-radius : 16px;
+}
+
+.bouton:hover{
+    font-family: 'Montserrat';
+    background-color:rgb(124, 15, 33);
+    font-weight: bold;
+}
+
+.bouton:active{
+    font-family: 'Montserrat';
+    background-color: rgba(13, 11, 48, 0.651);
+    font-weight: normal;
+}
+
+.mots{
+    font-family: 'montserrat';
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.3vw;
+}
+
+.criteres{
+    background-color: rgba(0, 0, 26, 0.800);
+    color: white;
+    padding: 16px ;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+    font-family: 'montserrat';
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw;
+    display: block;
+    text-align: center;
+    border-radius : 16px;
+    border-radius : 16px; 
+    width: 50vw;
+    height: auto; 
+}
+
+.criteres:hover{
+    font-weight: bold;
+}
+
+.containerPlanetCard{
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+    margin: 1vw;
+}
+@media (max-width: 800px) {
+    .containerPlanetCard {
+      flex-direction: column;
+    }
+  }
+
+.planetCard{
+    flex:50%;
+    /* background-color: rgba(0, 0, 26, 0.800); */
+    margin: 1vw;
+    border-radius: 16px;
+}
+
+.titleFloat{
+    text-align: center;
+}
+
+.planetTitle{
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    margin-top: 3.5vw;
+}
+
+.containerImgText{
+    display:flex;
+    flex-direction: row;
+    margin: 1vw;
+}
+@media (max-width: 600px) {
+    .containerImgText {
+      flex-direction: column;
+    }
+  }
+
+.textFloat {
+    flex:50%;
+    padding: 1.5vw;
+    margin: 1vw;
+    vertical-align: middle;
+}
+
+.planetText{
+    font-family: 'montserrat';
+    font-size: 1vw;
+    font-style: italic;
+    text-align: justify;
+    color: white;
+    margin-top: 4.5vw;
+}
+
+.imgFloat{
+    flex:50%;
+    padding: 1vw;
+    margin: 1vw;   
+}
+
+.imgPlanet{
+    width: 100%;
+}
+
 

@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trappist</title>
+    <link rel="icon" href=".png" type="image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div>
+    <div class="background">
+        <!-- logo et title -->
+        <div>
+            <a target="_blank" href="https://eyes.nasa.gov/apps/exo/#/system/TRAPPIST-1"><img class="logoplanet" src="img/logosimple.png" alt="logo"/></a>
+        </div>
+        <div>
+            <h1 class="title">TRAPPIST</h1>
+        </div>
+            <!-- rocket line -->
+        <div class="rocketLine"> 
+            <img src="img/rocketline-12.png" alt="rocket line" width="80%">
+        </div>
+        <div>
+            <!-- texte respirant -->
+            <p> 
+               <h1 class="titlesite">
+               <strong class="blink_me">Un nouveau souffle</strong> <br>
+                { Pour un avenir plus vaste }
+               </h1>
+            </p>
+            <!-- texte explicatif -->
+            <p class="explicativtext">
+               <strong>TRAPPIST-1, aussi nommé 2MASS J23062928-0502285</strong>, est une naine rouge ultra-froide, un peu plus grande mais beaucoup plus massive que la planète Jupiter, 
+               et beaucoup plus froide que le Soleil. Elle est située à <strong>environ 40,5 années-lumière de la Terre</strong>, dans la constellation du Verseau. Son système planétaire
+               est constitué d'au moins <strong>sept planètes rocheuses</strong>, le plus nombreux détecté jusqu'ici. Il s'agit de planètes de dimensions (taille et masse) similaires ou 
+               inférieures à celle de la Terre5 (entre 0,77 et 1,15 rayon terrestre6 et entre 0,33 et 1,16 masse terrestre). Ce système a la particularité d'être très 
+               compact car toutes les planètes sont situées sur une orbite plus petite que celle de Mercure. <strong>Trois à six d'entre elles sont situées dans la zone habitable.</strong> 
+               <br><br>
+               La Terre ne nous apporte plus ce dont nous necessitons pour continuer à y vivre en toute sérénité, avec <strong>le système TRAPPIST-1</strong>, un nouveau souffle est possible, 
+               <strong>rejoignez dès maintenant notre premier milliard de colons</strong>, et faîtes votre choix parmi nos <strong>sept planètes.</strong>
+            </p>
+        </div>
+        <!-- logo sur la page -->
+        <div class="logoplanetwebpage">
+            <img src="img/logofont.png" alt="logoplanetes" width="20%">
+        </div>
+        <div>
+            <p> <!-- texte de choix questionnnaire -->
+               <h1 class="agencytext"> Où partirez-vous demain ? </h1>
+            </p> <!-- rocket du dessous -->
+               <img class="rocketunderwhere" src="img/rocketline-12.png" alt="rocketLine" width="57%">
+        </div> 
+        <div> <!-- texte explicatif des selections -->
+            <p class="howtochoose">
+               <!-- Choisissez parmi nos sept planètes en définissant vos critères de sélection; <br>
+               la température de votre planète ainsi que sa période orbitale. -->
+            </p>
+        </div>
+    
+        <!-- mettre logo onglet et lien hypertexte vers video nasa -->
+        <div id="form" class="">
+            <!-- <div id="titreForm"> -->
+                <!-- <p class="introFormulaire">Afin de vous envoyer sur la planète la plus proche de vos rêves, veuillez sélectionner vos critères ci-dessous : </p> -->
+            <!-- </div> -->
+            <div id="multipleDropDownList">
+                <div id="dropDownList1">
+                    <label for="temperature"></label>
+                        <p class="mots"></p>
+                            <select class="criteres" name="temperature" id="temp-select">
+                                <option value="">Choisissez la température souhaitée</option>
+                                <option value="250">Froide</option>
+                                <option value="288">Tempérée</option>
+                                <option value="315">Chaude</option>
+                            </select>
+                </div>
+                <div id="dropDownList2">
+                    <label for="periodDay"></label>
+                        <p class="mots"></p>
+                            <select class="criteres" name="periodDay" id="periodDay-select">
+                                <option value="">Choisissez la période orbitale souhaitée</option>
+                                <option value="5">Courte</option>
+                                <option value="10">Moyenne</option>
+                                <option value="15">Longue</option>
+                            </select>
+                </div>
+            </div>
 
+            <button class="bouton" onclick="showPlanets()">Go planet!</button>
+
+        </div>
+            
+        <div id="" class="containerPlanetCard">
+            <div id="Planet1" class="planetCard">
+                <div class="titleFloat">
+                    <h1 class="planetTitle" id="Planet1.name"></h1>
+                </div>
+                <div class="containerImgText">
+                    <div class = "imgFloat">
+                        <img class="imgPlanet" id="Planet1.img" src="" alt="">
+                    </div>
+                    <div class = "textFloat">
+                        <p class="planetText" id = "Planet1.text"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Planet2" class="planetCard">
+                <div class="titleFloat">
+                    <h1 class="planetTitle" id="Planet2.name"></h1>
+                </div>
+                <div class="containerImgText">
+                    <div class = "imgFloat">
+                        <img class="imgPlanet" id="Planet2.img" src="" alt="">
+                    </div>
+                    <div class = "textFloat">
+                        <p class="planetText" id = "Planet2.text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
