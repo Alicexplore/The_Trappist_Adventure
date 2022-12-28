@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/anurati');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    /* background-image: url('img/backgroundlast-09.jpg'); */
+    background-color: rgb(240, 240, 240);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
+
+/* .title {
+    font-family: "anurati";
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 20vw;
+    margin-left: 12vw;
+    color: white;
+    width: 80%;
+    letter-spacing: 0.6em;
+    position: relative;
+} */
+
+.text {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 3vw;
+    margin-top: 20.5vw;
+    margin-left: 14vw;
+    font-family: "anurati";
+    font-size: 10vw;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px  #dfdfdf,
+        1px 2px 1px #dfdfdf,
+        1px 3px 1px #dfdfdf,
+        1px 4px 1px #dfdfdf,
+        1px 5px 1px #dfdfdf,
+        1px 6px 1px #dfdfdf,
+        1px 7px 1px #dfdfdf,
+        1px 8px 1px #dfdfdf,
+        1px 9px 1px #dfdfdf,
+        1px 10px 1px #dfdfdf,
+    1px 18px 6px rgba(123, 123, 123, 0.4),
+    1px 22px 10px rgba(134, 134, 134, 0.2),
+    1px 25px 35px rgba(135, 135, 135, 0.2),
+    1px 30px 60px rgba(126, 126, 126, 0.4);
+}
+
+.text2 {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.8vw;
+    margin-top: 33vw;
+    margin-left: 72vw;
+    font-family: "Montserrat";
+    font-size: 1.8vw;
+    font-weight: 700;
+    /* color: #737373; */
+    color: #b0b0b0;
+}
+    
+  
