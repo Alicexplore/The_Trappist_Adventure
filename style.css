@@ -15,23 +15,14 @@ body {
 }
 
 .background { 
-    width: auto;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(28, 28, 28);
     background-size: cover;
     background-repeat: no-repeat;
-    background-size:100%;
+    width: auto;
+    margin: 0;
+    padding: 0; 
+    display: flex;
  } 
-
-.planet {
-    width: 45%;
-}
-
- .logoplanet {
-    width: 5%;
-    position: relative;
-    margin-left: 3em;
-    margin-top: 3em;
-}
 
 .rocketLine {
     text-align: center;
