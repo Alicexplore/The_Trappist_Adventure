@@ -4,39 +4,17 @@
 body {
     margin: 0;
     padding: 0;
-    cursor: url(img/rocket-resize-08.png), auto;
-}
-
-.background {
-    /* background-image: url('img/backgroundlast-09.jpg'); */
     background-color: rgb(240, 240, 240);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 100vh;
-    margin: 0;
-    padding: 0; 
-    display: flex;
+    cursor: url(img/spoutniklongshadow-11.png), auto;
 }
-
-/* .title {
-    font-family: "anurati";
-    font-size: 8vw;
-    text-align: center;
-    margin-top: 20vw;
-    margin-left: 12vw;
-    color: white;
-    width: 80%;
-    letter-spacing: 0.6em;
-    position: relative;
-} */
 
 .text {
-    position: absolute;
+    transition: 2s;
+    /* position: absolute; */
     text-align: center;
-    letter-spacing: 3vw;
+    letter-spacing: 2.5vw;
     margin-top: 20.5vw;
-    margin-left: 14vw;
+    margin-left: 4vw; 
     font-family: "anurati";
     font-size: 10vw;
     font-weight: 700;
@@ -57,21 +35,14 @@ body {
     1px 30px 60px rgba(126, 126, 126, 0.4);
 }
 
-.text2 {
-    position: absolute;
-    text-align: center;
-    letter-spacing: 0.8vw;
-    margin-top: 33vw;
-    margin-left: 72vw;
-    font-family: "Montserrat";
-    font-size: 1.8vw;
-    font-weight: 700;
-    /* color: #737373; */
-    color: #b0b0b0;
+.text:hover {
+    letter-spacing: 5vw;
+    /* font font-family: ; */
+    text-decoration: none;
 }
 
 .enter {
-    cursor: url(img/rocket-resize-07.png), auto;
+    cursor: url(img/spoutnikshadow-10.png), auto;
     text-decoration: none;
     color: white;
 }
