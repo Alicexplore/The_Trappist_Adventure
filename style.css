@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(33, 33, 33);
+    cursor: url(./img/cursorgood-02.png), auto;
 }
 
 .title {
@@ -12,17 +14,7 @@ body {
     font-family: "anurati";
     font-size: 2vw;
     color: #b9b9b9;
-}
-
-.background { 
-    background-color: rgb(240, 240, 240);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
-    margin: 0;
-    padding: 0; 
-    display: flex;
- } 
+} 
 
 .rocketLine {
     text-align: center;
