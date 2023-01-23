@@ -7,10 +7,10 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
-.background {
+/* .background {
     height: 100vh;
     background-size: 100%;
-}
+} */
 
 .text {
     transition: 2s;
@@ -43,7 +43,7 @@ body {
     text-decoration: none;
 }
 
-.enter {
+#enter {
     cursor: url(img/spoutnikleft-12.png), auto;
     text-decoration: none;
     color: white;
