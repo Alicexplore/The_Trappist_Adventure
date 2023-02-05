@@ -25,10 +25,10 @@ Postscript: This GitHub repository will be completely transformed in order to pr
 
 <br />
 
-### Languages
+### Languages & tools
 
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,vscode,ai)](https://skillicons.dev)
 
 <br />
 
