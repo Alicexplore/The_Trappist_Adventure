@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trappist</title>
-    <link rel="icon" href=".png" type="image">
+    <title>The Trappist Adventure</title>
+    <link rel="icon" href="./img/planetblue-17.png" type="image">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 <div>
     <div class="background">
-        <div class="title">
-            TRAPPIST SYSTEM 
+        
+        <div>
+            <a target="_blank" href="https://eyes.nasa.gov/apps/exo/#/system/TRAPPIST-1"><img class="logoplanet" src="img/logosimple.png" alt="logo"/></a>
         </div>
-        <!-- <div>
+
+        <div>
+            <h1 class="title">TRAPPIST</h1>
+        </div>
+            
+        <div class="rocketLine"> 
+            <img src="img/rocketline-12.png" alt="rocket line" width="80%">
+        </div>
+
+        <div>
+            <p> 
                <h1 class="titlesite">
-               <strong class="blink_me">Un nouveau souffle</strong> <br>
-                { Pour un avenir plus vaste }
-               </h1> -->
-            <!-- texte explicatif -->
-            <!-- <p class="explicativtext">
+               <strong class="blink_me">Un nouveau souffle</strong><br>{ Pour un avenir plus vaste }
+               </h1>
+            </p>
+            <p class="explicativtext">
                <strong>TRAPPIST-1, aussi nommé 2MASS J23062928-0502285</strong>, est une naine rouge ultra-froide, un peu plus grande mais beaucoup plus massive que la planète Jupiter, 
                et beaucoup plus froide que le Soleil. Elle est située à <strong>environ 40,5 années-lumière de la Terre</strong>, dans la constellation du Verseau. Son système planétaire
                est constitué d'au moins <strong>sept planètes rocheuses</strong>, le plus nombreux détecté jusqu'ici. Il s'agit de planètes de dimensions (taille et masse) similaires ou 
@@ -30,24 +39,26 @@
                La Terre ne nous apporte plus ce dont nous necessitons pour continuer à y vivre en toute sérénité, avec <strong>le système TRAPPIST-1</strong>, un nouveau souffle est possible, 
                <strong>rejoignez dès maintenant notre premier milliard de colons</strong>, et faîtes votre choix parmi nos <strong>sept planètes.</strong>
             </p>
-        </div> -->
+        </div>
+        
+        <div class="logoplanetwebpage">
+            <img src="img/logofont.png" alt="logoplanetes" width="20%">
+        </div>
+
         <div>
-            <p> <!-- texte de choix questionnnaire -->
+            <p> 
                <h1 class="agencytext"> Où partirez-vous demain ? </h1>
-            </p> <!-- rocket du dessous -->
+            </p>
                <img class="rocketunderwhere" src="img/rocketline-12.png" alt="rocketLine" width="57%">
         </div> 
-       <!-- <div>  texte explicatif des selections -->
-            <!-- <p class="howtochoose">
-            </p> -->
-        <!-- </div> -->
-    
-        <!-- mettre logo onglet et lien hypertexte vers video nasa -->
+
+        <div> 
+            <p class="howtochoose">
+            </p>
+        </div>
+        
         <div id="form" class="">
-            <!-- <div id="titreForm"> -->
-                <!-- <p class="introFormulaire">Afin de vous envoyer sur la planète la plus proche de vos rêves, veuillez sélectionner vos critères ci-dessous : </p> -->
-            <!-- </div> -->
-            <div id="multipleDropDownList">
+             <div id="multipleDropDownList">
                 <div id="dropDownList1">
                     <label for="temperature"></label>
                         <p class="mots"></p>
@@ -60,7 +71,8 @@
                 </div>
                 <div id="dropDownList2">
                     <label for="periodDay"></label>
-                        <p class="mots"></p>
+                        <p class="mots">
+                        </p>
                             <select class="criteres" name="periodDay" id="periodDay-select">
                                 <option value="">Choisissez la période orbitale souhaitée</option>
                                 <option value="5">Courte</option>
@@ -69,9 +81,7 @@
                             </select>
                 </div>
             </div>
-
             <button class="bouton" onclick="showPlanets()">Go planet!</button>
-
         </div>
             
         <div id="" class="containerPlanetCard">
@@ -102,8 +112,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+         </div>
+
     </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>

@@ -5,12 +5,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(240, 240, 240);
-}
-
-/* .background {
+    width: auto;
     height: 100vh;
-    background-size: 100%;
-} */
+    cursor: url(img/new_spoutnik-18.png), auto;
+}
 
 .text {
     transition: 2s;
@@ -44,9 +42,11 @@ body {
 }
 
 #enter {
-    cursor: url(img/spoutnikleft-12.png), auto;
-    text-decoration: none;
-    color: white;
+    cursor: url(img/new_spoutnik-18.png), auto;
+}
+
+.hide {
+    color: rgb(240, 240, 240);
 }
     
   
