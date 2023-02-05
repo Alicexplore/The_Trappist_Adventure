@@ -21,8 +21,7 @@ Postscript: This GitHub repository will be completely transformed in order to pr
 
 ## New Homepage Preview
 
-
-[TRAPPIST.webm](https://user-images.githubusercontent.com/102388803/216819456-eff29b10-63fe-4260-9240-b992fb759288.webm)
+![TRAPPIST](https://user-images.githubusercontent.com/102388803/216838816-650d366f-28d3-463d-9e53-a0ee22f66cee.gif)
 
 <br />
 
