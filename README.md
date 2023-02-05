@@ -5,7 +5,7 @@ For a breath of fresh air, visit the Trappist system 🪐 <br />
 ### Project Desciption
 "The Trappist Adventure" is a fake intergalactic travel agency that offers you the opportunity to travel to the Trappist system.
 <br /><br />
-With the help of an API (https://data.opendatasoft.com/), we have retrieved data about the seven planets in the system in order to obtain their orbital periods and atmospheric temperatures.
+With the help of an API, we have retrieved data about the seven planets in the system in order to obtain their orbital periods and atmospheric temperatures.
 <br /><br />
 We then sorted this data to offer you, using a drop-down list, the choice to select the desired orbital period and temperature yourself.
 <br /><br />
@@ -37,3 +37,10 @@ Postscript: This GitHub repository will be completely transformed in order to pr
 • https://github.com/JoanneLongeville <br />
 • https://github.com/HeleneVeber <br />
 • https://github.com/Angy41
+
+<br />
+
+### Resources 
+
+• https://data.opendatasoft.com/
+
