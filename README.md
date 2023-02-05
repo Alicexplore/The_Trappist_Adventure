@@ -3,7 +3,7 @@
 For a breath of fresh air, visit the Trappist system 🪐 
 <br /><br />
 
-## Project Desciption
+## About this project
 
 "The Trappist Adventure" is a fake intergalactic travel agency that offers you the opportunity to travel to the Trappist system.
 <br /><br />
