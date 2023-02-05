@@ -117,9 +117,9 @@ const compareUserChoiceToApiInfo = (tableau) => {
                 writePlanet(1, tableau[i].name, tableau[i].img, tableau[i].text)
                 console.log("test froid moyenne", tableau[i])
             }
-            else {
-                showErrorMessage()
-            }
+            // else {
+            //     showErrorMessage()
+            // }
         }
         else if (userTemperature == 250 && userPeriodDay == 15) { // FROIDE LONGUE
             if (tableau[i].temps < 250 && tableau[i].periodDay > 10) {
@@ -128,27 +128,27 @@ const compareUserChoiceToApiInfo = (tableau) => {
                 writePlanet(2, tableau[6].name, tableau[6].img, tableau[6].text)
                 
             }
-            else {
-                showErrorMessage()
-            }
+            // else {
+            //     showErrorMessage()
+            // }
         }
         else if (userTemperature == 288 && userPeriodDay == 5) { // TEMPEREE COURTE
             if (tableau[i].temps > 250 && tableau[i].temps < 315 && tableau[i].periodDay < 5) {
                 writePlanet(1, tableau[i].name, tableau[i].img, tableau[i].text)
                 console.log(tableau[i])
             }
-            else {
-                showErrorMessage()
-            }
+            // else {
+            //     showErrorMessage()
+            // }
         }
         else if (userTemperature == 288 && userPeriodDay == 10) { // TEMPEREE MOYENNE
             if (tableau[i].temps > 250 && tableau[i].temps < 315 && tableau[i].periodDay > 5 && tableau[i].periodDay < 10) {
                 writePlanet(1, tableau[i].name, tableau[i].img, tableau[i].text)
                 console.log(tableau[i])
             }
-            else {
-                showErrorMessage()
-            }
+            // else {
+            //     showErrorMessage()
+            // }
         }
         else if (userTemperature == 288 && userPeriodDay == 15) { // TEMPEREE LONGUE
             if (tableau[i].temps > 250 && tableau[i].temps < 315 && tableau[i].periodDay > 10) {
@@ -164,9 +164,9 @@ const compareUserChoiceToApiInfo = (tableau) => {
                 writePlanet(1, tableau[0].name, tableau[0].img, tableau[0].text)
                 writePlanet(2, tableau[4].name, tableau[4].img, tableau[4].text)
             }
-            else {
-                showErrorMessage()
-            }
+            // else {
+            //     showErrorMessage()
+            // }
         }
         else if (userTemperature == 315 && userPeriodDay == 10) { // CHAUDE MOYENNE
             if (tableau[i].temps > 314 && tableau[i].periodDay > 5 && tableau[i].periodDay < 10) {

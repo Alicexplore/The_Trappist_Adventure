@@ -1,7 +1,7 @@
 # The_Trappist_Adventure
 
-For a breath of fresh air, visit the Trappist system 🪐 <br />
-<br />
+For a breath of fresh air, visit the Trappist system 🪐 
+<br /><br />
 ### Project Desciption
 "The Trappist Adventure" is a fake intergalactic travel agency that offers you the opportunity to travel to the Trappist system.
 <br /><br />
@@ -14,7 +14,6 @@ Finally, by combining the data previously selected by you, the planets are displ
 Bon voyage 👋🏻
 <br /><br />
 Postscript: This GitHub repository will be completely transformed in order to present you a new version that will display the TRAPPIST system in animation and offer you a whole new experience. 🚀
-
 
 <br />
 
