@@ -2,7 +2,9 @@
 
 For a breath of fresh air, visit the Trappist system 🪐 
 <br /><br />
-### Project Desciption
+
+## Project Desciption
+
 "The Trappist Adventure" is a fake intergalactic travel agency that offers you the opportunity to travel to the Trappist system.
 <br /><br />
 With the help of an API, we have retrieved data about the seven planets in the system in order to obtain their orbital periods and atmospheric temperatures.
@@ -17,21 +19,21 @@ Postscript: This GitHub repository will be completely transformed in order to pr
 
 <br />
 
-### New Homepage Preview
+## New Homepage Preview
 
 
 [TRAPPIST.webm](https://user-images.githubusercontent.com/102388803/216819456-eff29b10-63fe-4260-9240-b992fb759288.webm)
 
 <br />
 
-### Languages & tools
+## Languages & tools
 
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,vscode,ai,github,git)](https://skillicons.dev)
 
 <br />
 
-### First Version Contributors 
+## First Version Contributors 
 
 • https://github.com/JoanneLongeville <br />
 • https://github.com/HeleneVeber <br />
@@ -39,7 +41,7 @@ Postscript: This GitHub repository will be completely transformed in order to pr
 
 <br />
 
-### Resources 
+## Resources 
 
 • https://data.opendatasoft.com/
 
