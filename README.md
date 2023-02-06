@@ -34,6 +34,7 @@ Postscript: This GitHub repository will be completely transformed in order to pr
 
 ## First Version Contributors 
 
+• https://github.com/Alicexplore <br />
 • https://github.com/JoanneLongeville <br />
 • https://github.com/HeleneVeber <br />
 • https://github.com/Angy41
