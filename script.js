@@ -1,12 +1,12 @@
 // REQUETE FONCTION ASYNCHRONE //
 
-async function callSystemTrappist1 () {
-    try {
+async function callSystemTrappist1 () {//action effectuees en arriere plan et qui ne bloquent pas l'execution du code souvent utilisé ehange de données
+    try { //methode qui permet de récuoerer des données renvoie une promise et permet de travailer avec les données de maniere asyhnchrone
         const response = await fetch(`https://data.opendatasoft.com/api/records/1.0/search/?dataset=exoplaneteu_catalog-1%40datastro&q=&lang=fr&sort=updated&facet=discovered&facet=updated&facet=mass&facet=semi_major_axis&facet=eccentricity&facet=inclination&facet=detection_type&facet=molecules&facet=star_name&facet=ra&facet=dec&facet=star_distance&facet=star_metallicity&facet=star_mass&facet=star_radius&facet=star_age&facet=star_magnetic_field&facet=planet_status&refine.star_name=TRAPPIST-1&timezone=europe%2FParis`);
-        let data = await response.json();
+        let data = await response.json(); //format de données léger et structuré (objets/tableaux)
         let promise = data.records
         console.log("planet dans callSystemTrappist1", promise)
-        return promise;
+        return promise; // resultat de la requete asyhnchrone
     }
     catch (error){
         console.log ("Message d'erreur: ", error.message);
@@ -17,15 +17,15 @@ async function callSystemTrappist1 () {
 
 const planetInfos =
     callSystemTrappist1()
-        .then((promise) => {
-            let planets = [];
+        .then((promise) => { //dans notre promise
+            let planets = []; //on push das un tableau planet name temps et period day et nom
             for (let i in promise) {
                 planets.push({   
                     name : promise[i].fields.name,
                     temps : promise[i].fields.temp_calculated,
                     periodDay : promise[i].fields.orbital_period
-
-                })
+                   
+                }) 
             }
             return planets;
         }
@@ -66,47 +66,47 @@ const planetInfos =
     
 // ASSIGNATION DES INFOS A CHAQUE PLANETE //
 
-addTextAndImgToPlanetInfo =
+var addTextAndImgToPlanetInfo =
     planetInfos
     .then((planets)=>{
         let planetsImg = [];
-        for (let i in planets) {
-            for (let j in objectTest) {
-                if(planets[i].name == objectTest[j].name) {
-                    planetsImg.push(Object.assign(planets[i], objectTest[j]))
+        for (let i in planets) { // on boucle
+            for (let j in objectTest) { // on boucle
+                if(planets[i].name == objectTest[j].name) { //dans un tableau planetImg on va assigner les informations de nos objets a la planete en 
+                    planetsImg.push(Object.assign(planets[i], objectTest[j])) //(target --> source) //verifiant que les noms correspondent 
                 }
             }
         }
-        return planetsImg
+        return planetsImg;
         }
     );
 
-// CHOIX IMPOSSIBLE - AUNCUNE PLANETE NE CORRESPOND AUX CHOIX ENTRES //
+// CHOIX IMPOSSIBLE - AUCUNE PLANETE NE CORRESPOND AUX CHOIX ENTRES //
 
-const showErrorMessage = () => {
+const showErrorMessage = () => { // on s 'en servira plus tard
     document.getElementById("Planet1.name").innerHTML = "Désolé, allez chercher dans une autre galaxie" 
 };
 
 // SELECTION DES ELEMENTS HTML //
 
-const writePlanet = (id, name, img, text) => {
+const writePlanet = (id, name, img, text) => { // 
     let planetId="Planet"+id
-    document.getElementById(planetId+".name").innerHTML =name
+    document.getElementById(planetId+".name").innerHTML =name //permet d acceder a un element precis du html
     document.getElementById(planetId+".img").src =img
-    document.getElementById(planetId+".text").innerHTML =text
+    document.getElementById(planetId+".text").innerHTML =text // ce qui va s'afficher
     document.getElementById(planetId).style.backgroundColor="rgba(0, 0, 26, 0.800)"
 };
 
-// COMPARASION ENTRE CHOIX UTILISATEUR ET DONNEES //
+// COMPARASION ENTRE CHOIX UTILISATEUR ET DONNEES // froide tempereee chaude,  courte moyenne longue
 
 const compareUserChoiceToApiInfo = (tableau) => {
-    let userTemperature = document.getElementById("temp-select").value;
-    let userPeriodDay = document.getElementById("periodDay-select").value; 
+    let userTemperature = document.getElementById("temp-select").value; // on recupere le choix de temp
+    let userPeriodDay = document.getElementById("periodDay-select").value; // on recupere le choix de periode orbitale
     console.log(tableau)
-    for (let i in tableau) {
+    for (let i in tableau) { //repeter des actions
         if (userTemperature == 250 && userPeriodDay == 5) { // FROIDE COURTE
             if (tableau[i].temps < 250 && tableau[i].periodDay < 5) {
-                writePlanet(1, tableau[i].name, tableau[i].img, tableau[i].text)
+                writePlanet(1, tableau[i].name, tableau[i].img, tableau[i].text) //comparer les données
             }
             else {
                 showErrorMessage()
@@ -195,3 +195,5 @@ const showPlanets = () => {
         compareUserChoiceToApiInfo(planetsImg)
     })  
 };  
+
+showPlanets();
